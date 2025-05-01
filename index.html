@@ -2,9 +2,159 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Facility Management - Fixed Assets</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fixed Assets Management Services</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 <body>
-  <h2>This is just a demo</h2>
+  <header class="navbar">
+    <div class="container">
+      <div class="logo">Fixed Assets</div>
+  
+      <!-- Hamburger Toggle Button -->
+      <div class="hamburger" id="hamburger">
+        &#9776;
+      </div>
+  
+      <!-- Navigation Menu -->
+      <nav id="nav-menu">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="facilitymgt.html">Facility Management</a></li>
+          <li><a href="propertymgt.html">Property Management</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+
+  <section class="hero">
+    <div class="hero-content">
+      <!-- <h2>Professional Facility & Property Management</h2> -->
+      <p>We manage your assets with excellence, care, and proven expertise.</p>
+      <br><br>
+      <a href="#" class="btn">Get in Touch</a>
+    </div>
+  </section>
+
+  <section class="services-preview">
+    <h3>Our Core Services</h3>
+    <div class="service-cards">
+      <div class="card">
+        <i>🏢</i>
+        <h4>Facility Management</h4>
+        <p>We oversee your facility operations, maintenance, and improvement.</p>
+      </div>
+      <div class="card">
+        <i>🏠</i>
+        <h4>Property Management</h4>
+        <p>Expert handling of property letting, sales, and tenant relations.</p>
+      </div>
+      <div class="card">
+        <i>⚙️</i>
+        <h4>Asset Maintenance</h4>
+        <p>Timely and cost-effective maintenance for long-term asset value.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="gallery">
+    <h3>Project Gallery</h3>
+    <div class="swiper gallery-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="images/gallery1.jpg" alt="Gallery Image 1"></div>
+        <div class="swiper-slide"><img src="images/gallery2.jpg" alt="Gallery Image 2"></div>
+        <div class="swiper-slide"><img src="images/gallery3.jpg" alt="Gallery Image 3"></div>
+        <div class="swiper-slide"><img src="images/gallery4.jpg" alt="Gallery Image 4"></div>
+        <div class="swiper-slide"><img src="images/gallery5.jpg" alt="Gallery Image 5"></div>
+        <div class="swiper-slide"><img src="images/gallery6.jpg" alt="Gallery Image 6"></div>
+        <div class="swiper-slide"><img src="images/gallery7.jpg" alt="Gallery Image 6"></div>
+        <div class="swiper-slide"><img src="images/gallery8.jpg" alt="Gallery Image 6"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-services">
+    <div class="container">
+      <h3>About Us</h3>
+      <p>
+        Fixed Assets Management Services is a professional property and facility management company committed to excellence. We handle a variety of assets including residential, commercial, and industrial properties. Our team ensures your environment is safe, maintained, and fully optimized for value.
+      </p>
+    </div>
+  </section>
+
+  <section class="testimonials">
+    <h3>Client Testimonials</h3>
+    <div class="swiper testimonial-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide testimonial">
+          <img src="images/person1.jpg" alt="Client 1" />
+          <p>"Excellent service and quick response time!"</p>
+          <h4>Mr. Johnson</h4>
+        </div>
+        <div class="swiper-slide testimonial">
+          <img src="images/person2.jpg" alt="Client 2" />
+          <p>"Professional and reliable. Highly recommended."</p>
+          <h4>Mrs. Ahmed</h4>
+        </div>
+        <div class="swiper-slide testimonial">
+          <img src="images/person3.jpg" alt="Client 3" />
+          <p>"They transformed our facility beyond expectations."</p>
+          <h4>Engr. Okafor</h4>
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </section>
+
+  <a href="https://wa.me/+2348068448435" target="_blank" class="whatsapp-float">Chat on WhatsApp</a>
+
+  <footer>
+    <div class="social">
+      <a href="https:www.facebook.com/sheddu.glorious"  target="_blank"><i>Facebook</i></a> <i>|</i>
+      <a href="https://x.com" target="_blank"><i>Twitter</i></a> <i>|</i>
+      <a href="#"><i>Instagram</i></a> <i>|</i>
+      <a href="https://wa.me/+2348068448435" target="_blank"><i>WhatsApp</i></a>
+    </div>
+    <p>&copy; 2025 Fixed Assets Management Services. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const gallerySwiper = new Swiper('.gallery-swiper', {
+      loop: true,
+      autoplay: { delay: 2500 },
+      spaceBetween: 20,
+      slidesPerView: 1,
+      breakpoints: {
+        640: { slidesPerView: 2 },
+        1024: { slidesPerView: 3 },
+      },
+    });
+
+    const testimonialSwiper = new Swiper('.testimonial-swiper', {
+      loop: true,
+      autoplay: { delay: 4000 },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      slidesPerView: 1,
+    });
+  </script>
+
+  <script>
+  const hamburger = document.getElementById('hamburger');
+  const navMenu = document.getElementById('nav-menu');
+
+  hamburger.addEventListener('click', () => {
+    navMenu.classList.toggle('open');
+  });
+  </script>
+
 </body>
+</html>
+

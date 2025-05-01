@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Property Management - Fixed Assets</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="navbar">
+    <div class="container">
+      <div class="logo">Fixed Assets</div>
+  
+      <!-- Hamburger Toggle Button -->
+      <div class="hamburger" id="hamburger">
+        &#9776;
+      </div>
+  
+      <!-- Navigation Menu -->
+      <nav id="nav-menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="facilitymgt.html">Facility Management</a></li>
+          <li><a href="propertymgt.html" class="active">Property Management</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero property-hero">
+    <div class="hero-content">
+      <h2>Property Management Portfolio</h2>
+      <p>Browse through our listings for letting and sales.</p>
+    </div>
+  </section>
+
+  <br><br>
+  <!-- Available Properties for Letting -->
+  <section class="available-for-letting">
+    <h3><center>Properties for Letting</center></h3>
+    
+    <!-- Filters for Letting Properties -->
+    <div class="filters">
+      <select id="lettingFilterType">
+        <option value="all">All Types</option>
+        <option value="apartment">Apartment</option>
+        <option value="terrace">Terrace</option>
+        <option value="duplex">Duplex</option>
+        <option value="bungalow">Bungalow</option>
+      </select>
+
+      <select id="lettingFilterLocation">
+        <option value="all">Abuja</option>
+        <option value="maitama">Maitama</option>
+        <option value="asokoro">Asokoro</option>
+        <option value="gwarimpa">Gwarimpa</option>
+        <option value="kubwa">Kubwa</option>
+        <option value="dutse">Asokoro</option>
+        <option value="dawaki">Dawaki</option>
+      </select>
+    </div>
+    
+    <!-- Letting Properties List -->
+    <div class="property-list" id="lettingPropertyList">
+      <div class="property-card" data-type="terrace" data-location="asokoro">
+        <img src="images/property/prop1/front.jpg" alt="5-Bedroom Duplex in Asokoro" loading="lazy" />
+        <h3>5-Bedroom Terrace</h3>
+        <p>Location: Asokoro</p>
+        <p>₦8,000,000 / annum</p>
+        <a href="property-details/prop1.html" class="btn">View Details</a>
+      </div>
+
+      <div class="property-card" data-type="bungalow" data-location="abuja">
+        <img src="images/property/prop2/front.jpg" alt="5-Bedroom Duplex in Katampe" loading="lazy" />
+        <h3>3-Bedroom Bungalow</h3>
+        <p>Location: Katampe</p>
+        <p>₦3,500,000 / annum</p>
+        <a href="property-details/prop2.html" class="btn">View Details</a>
+      </div>
+
+      <div class="property-card" data-type="apartment" data-location="maitama">
+        <img src="images/property/prop3/front.jpg" alt="2-Bedroom Apartment in Maitama" loading="lazy" />
+        <h3>2-Bedroom Apartment</h3>
+        <p>Location: Maitama</p>
+        <p>₦3,000,000 annum</p>
+        <a href="property-details/prop3.html" class="btn">View Details</a>
+      </div>
+
+      <div class="property-card" data-type="duplex" data-location="gwarimpa">
+        <img src="images/property/prop4/front.jpg" alt="5-Bedroom Duplex in Gwarimpa" loading="lazy"/>
+        <h3>5-Bedroom Duplex</h3>
+        <p>Location: Gwarimpa</p>
+        <p>₦6,000,000 / annum</p>
+        <a href="property-details/prop4.html" class="btn">View Details</a>
+      </div>
+
+      <!-- More properties for letting can go here -->
+    </div>
+  </section>
+
+  <!-- Available Properties for Sale -->
+  <section class="available-for-sale">
+    <h3><center>Properties for Sale</center></h3>
+
+    <!-- Filters for Sale Properties -->
+    <div class="filters">
+      <select id="saleFilterType">
+        <option value="all">All Types</option>
+        <option value="apartment">Apartment</option>
+        <option value="terrace">Terrace</option>
+        <option value="duplex">Duplex</option>
+        <option value="bungalow">Bungalow</option>
+      </select>
+
+      <select id="saleFilterLocation">
+        <option value="all">Abuja</option>
+        <option value="maitama">Maitama</option>
+        <option value="asokoro">Asokoro</option>
+        <option value="gwarimpa">Gwarimpa</option>
+        <option value="kubwa">Kubwa</option>
+        <option value="dutse">Asokoro</option>
+        <option value="dawaki">Dawaki</option>
+
+      </select>
+    </div>
+
+    <!-- Sale Properties List -->
+    <div class="property-list" id="salePropertyList">
+      <div class="property-card" data-type="apartment" data-location="maitama">
+        <img src="images/property/prop5/front.jpg" alt="2-Bedroom Apartment in Maitama" loading="lazy" />
+        <h3>3-Bedroom Apartment</h3>
+        <p>Location: Maitama</p>
+        <p>₦75,000,000</p>
+        <a href="property-details/prop5.html" class="btn">View Details</a>
+      </div>
+
+      <div class="property-card" data-type="terrace" data-location="asokoro">
+        <img src="images/property/prop6/front.jpg" alt="5-Bedroom Duplex in Asokoro" loading="lazy" />
+        <h3>5-Bedroom Terrace</h3>
+        <p>Location: Asokoro</p>
+        <p>₦150,000,000</p>
+        <a href="property-details/prop6.html" class="btn">View Details</a>
+      </div>
+
+      <div class="property-card" data-type="duplex" data-location="gwarimpa">
+        <img src="images/property/prop7/front.jpg" alt="5-Bedroom Duplex in Gwarimpa" loading="lazy" />
+        <h3>5-Bedroom Duplex</h3>
+        <p>Location: Gwarimpa</p>
+        <p>₦200,000,000</p>
+        <a href="property-details/prop7.html" class="btn">View Details</a>
+      </div>
+
+      <div class="property-card" data-type="bungalow" data-location="abuja">
+        <img src="images/property/prop8/front.jpg" alt="5-Bedroom Duplex in Katampe" loading="lazy" />
+        <h3>3-Bedroom Bungalow</h3>
+        <p>Location: Katampe</p>
+        <p>₦85,000,000</p>
+        <a href="property-details/prop8.html" class="btn">View Details</a>
+      </div>
+
+      <!-- More properties for sale can go here -->
+    </div>
+  </section>
+
+   <!-- WhatsApp Button -->
+   <a href="https://wa.me/+2348068448435" target="_blank" class="whatsapp-float">Chat on WhatsApp</a>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Fixed Assets Management Services</p>
+    <div class="socials">
+      <a href="https://wa.me/+2348068448435" target="_blank">WhatsApp</a> <i>|</i>
+      <a href="https://x.com/shedyrex" target="_blank">Twitter</a>  <i>|</i>
+      <a href="https://www.facebook.com/sheddu.glorious" target="_blank">Facebook</a>  <i>|</i>
+      <a href="#">Instagram</a>
+    </div>
+  </footer>
+
+  <script>
+    // Filtering for Letting Properties
+    const lettingTypeFilter = document.getElementById('lettingFilterType');
+    const lettingLocationFilter = document.getElementById('lettingFilterLocation');
+    const lettingPropertyCards = document.querySelectorAll('.available-for-letting .property-card');
+
+    function filterLettingProperties() {
+      const type = lettingTypeFilter.value;
+      const location = lettingLocationFilter.value;
+
+      lettingPropertyCards.forEach(card => {
+        const matchType = type === 'all' || card.dataset.type === type;
+        const matchLoc = location === 'all' || card.dataset.location === location;
+        card.style.display = matchType && matchLoc ? 'block' : 'none';
+      });
+    }
+
+    lettingTypeFilter.addEventListener('change', filterLettingProperties);
+    lettingLocationFilter.addEventListener('change', filterLettingProperties);
+
+    // Filtering for Sale Properties
+    const saleTypeFilter = document.getElementById('saleFilterType');
+    const saleLocationFilter = document.getElementById('saleFilterLocation');
+    const salePropertyCards = document.querySelectorAll('.available-for-sale .property-card');
+
+    function filterSaleProperties() {
+      const type = saleTypeFilter.value;
+      const location = saleLocationFilter.value;
+
+      salePropertyCards.forEach(card => {
+        const matchType = type === 'all' || card.dataset.type === type;
+        const matchLoc = location === 'all' || card.dataset.location === location;
+        card.style.display = matchType && matchLoc ? 'block' : 'none';
+      });
+    }
+
+    saleTypeFilter.addEventListener('change', filterSaleProperties);
+    saleLocationFilter.addEventListener('change', filterSaleProperties);
+  </script>
+
+  <script>
+  const hamburger = document.getElementById('hamburger');
+  const navMenu = document.getElementById('nav-menu');
+
+  hamburger.addEventListener('click', () => {
+    navMenu.classList.toggle('open');
+  });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Facility Management - Fixed Assets</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="navbar">
+    <div class="container">
+      <div class="logo">Fixed Assets</div>
+  
+      <!-- Hamburger Toggle Button -->
+      <div class="hamburger" id="hamburger">
+        &#9776;
+      </div>
+  
+      <!-- Navigation Menu -->
+      <nav id="nav-menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="facilitymgt.html" class="active">Facility Management</a></li>
+          <li><a href="propertymgt.html">Property Management</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero facility-hero">
+    <div class="hero-content">
+      <h2>Facility Management Portfolio</h2>
+      <p>Explore our successful projects and operational excellence.</p>
+    </div>
+  </section>
+
+  <!-- Portfolio Gallery -->
+  <section class="gallery">
+    <h3>PICTORIAL EXCERPTS</h3>
+    <div class="swiper gallery-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="slide-wrapper">
+            <img src="images/facility1.jpg" alt="Before" location="lazy" />
+            <p class="slide-caption">Men at work</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slide-wrapper">
+            <img src="images/facility2.jpg" alt="Before" location="lazy" />
+            <p class="slide-caption">Staff on duty</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slide-wrapper">
+            <img src="images/facility3.jpg" alt="Before" location="lazy" />
+            <p class="slide-caption">Facility site inpection</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slide-wrapper">
+            <img src="images/facility4.jpg" alt="Before" location="lazy" />
+            <p class="slide-caption">Men at work</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slide-wrapper">
+            <img src="images/facility5.jpg" alt="Before" location="lazy" />
+            <p class="slide-caption">Facility management is all about passion</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slide-wrapper">
+            <img src="images/facility6.jpg" alt="Before" location="lazy" />
+            <p class="slide-caption">Gardners on duty</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slide-wrapper">
+            <img src="images/facility7.jpg" alt="Before">
+            <p class="slide-caption">Cleaner on duty</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slide-wrapper">
+            <img src="images/facility8.jpg" alt="Before" location="lazy" />
+            <p class="slide-caption">A happy home is our top-most priority</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slide-wrapper">
+            <img src="images/facility9.jpg" alt="Before" location="lazy" />
+            <p class="slide-caption">Cleanliness is next to godliness</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slide-wrapper">
+            <img src="images/facility10.jpg" alt="Before" location="lazy" />
+            <p class="slide-caption">Maintenance of HVAC and MEP equipment</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Facility Services -->
+  <section class="about-services">
+    <div class="container">
+      <h3>Our Facility Management Services</h3>
+      <p>
+        At Fixed Assets Management Services, we specialize in delivering top-tier facility operations across residential and commercial environments.
+        From preventive maintenance to emergency repairs, cleaning, security coordination, and contractor supervision — we help keep your environment fully functional and safe.
+      </p>
+    </div>
+  </section>
+
+  <!-- CTA with Form -->
+<section class="cta">
+  <div class="container">
+    <h3>Need Professional Facility Management?</h3>
+    
+    <div class="cta-content">
+      <div class="cta-box">
+        <a href="https://wa.me/+2348068448435" class="btn">Chat with Us on WhatsApp</a>
+      </div>
+
+      <div class="cta-form-box">
+        <form action="https://formspree.io/f/xvgazego" method="POST">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea name="message" rows="4" placeholder="Tell us what you need..." required></textarea>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- WhatsApp Button -->
+  <a href="https://wa.me/+2348068448435" target="_blank" class="whatsapp-float">Chat on WhatsApp</a>
+
+  <!-- Footer -->
+  <footer>
+    <div class="social">
+      <a href="https://www.m.facebook.com/sheddu.glorious"  target="_blank"><i>Facebook</i></a> <i>|</i>
+      <a href="https://x.com/shedyrex" target="_blank"><i>Twitter</i></a> <i>|</i>
+      <a href="#"><i>Instagram</i></a> <i>|</i>
+     <a href="https://wa.me/+2348068448435" target="_blank"><i>WhatsApp</i></a>
+    </div>
+    <p>&copy; 2025 Fixed Assets Management Services. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const gallerySwiper = new Swiper('.gallery-swiper', {
+      loop: true,
+      autoplay: { delay: 3000 },
+      spaceBetween: 20,
+      slidesPerView: 1,
+      breakpoints: {
+        640: { slidesPerView: 2 },
+        1024: { slidesPerView: 3 },
+      },
+    });
+  </script>
+
+  <script>
+  const hamburger = document.getElementById('hamburger');
+  const navMenu = document.getElementById('nav-menu');
+
+  hamburger.addEventListener('click', () => {
+    navMenu.classList.toggle('open');
+  });
+  </script>
+
+</body>
+</html>
+
