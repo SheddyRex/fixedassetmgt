@@ -9,24 +9,23 @@
 </head>
 <body>
   <header class="navbar">
-    <div class="container">
-      <div class="logo">Fixed Assets</div>
-  
-      <!-- Hamburger Toggle Button -->
-      <div class="hamburger" id="hamburger">
-        &#9776;
+  <header class="navbar">
+  <div class="container">
+    <div class="logo">Fixed Assets</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="facility-management.html">Facility Management</a></li>
+        <li><a href="property-management.html">Property Management</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
-  
-      <!-- Navigation Menu -->
-      <nav id="nav-menu">
-        <ul>
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="facilitymgt.html">Facility Management</a></li>
-          <li><a href="propertymgt.html">Property Management</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
+    </nav>
+  </div>
   </header>
   
 
@@ -145,13 +144,12 @@
       slidesPerView: 1,
     });
   </script>
-
   <script>
-  const hamburger = document.getElementById('hamburger');
-  const navMenu = document.getElementById('nav-menu');
+  const hamburger = document.querySelector('.hamburger');
+  const navLinks = document.querySelector('.nav-links');
 
   hamburger.addEventListener('click', () => {
-    navMenu.classList.toggle('open');
+    navLinks.classList.toggle('open');
   });
   </script>
 
