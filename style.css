@@ -69,7 +69,7 @@
 }
 
 /* Responsive behavior */
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   .nav-links {
     position: absolute;
     top: 70px;
@@ -99,11 +99,7 @@
   }
 }
 
-  .hamburger {
-    display: flex;
-  }
-}
-  
+
   /* HERO */
   .hero {
     background: url('images/hero.jpg') center center/cover no-repeat;
