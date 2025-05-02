@@ -16,75 +16,83 @@
     list-style: none;
   }
   
-  /* NAVBAR */
-  .navbar {
-    background: #002244;
-    color: white;
-    padding: 1rem 0;
-  }
-  .navbar .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 1.5rem;
-  }
-  .logo {
-    font-size: 1.8rem;
-    font-weight: bold;
-  }
-  .navbar nav ul {
-    display: flex;
-    gap: 1.2rem;
-  }
-  .navbar nav ul li a {
-    color: white;
-    font-weight: 500;
-  }
-  .navbar nav ul li a.active,
-  .navbar nav ul li a:hover {
-    border-bottom: 2px solid white;
-  }
+/* Base styles */
+.navbar {
+  background: #002244;
+  color: white;
+  padding: 1rem 0;
+}
 
-  /* Hamburger button (hidden on desktop) */
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.5rem;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+nav {
+  position: relative;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.2rem;
+  list-style: none;
+}
+
+.nav-links li a {
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.nav-links li a.active,
+.nav-links li a:hover {
+  border-bottom: 2px solid white;
+}
+
+/* Hamburger menu styles */
 .hamburger {
   display: none;
-  font-size: 2rem;
+  flex-direction: column;
   cursor: pointer;
-  color: white;
+  gap: 5px;
 }
 
-/* Hide nav on mobile by default */
-#nav-menu {
-  transition: max-height 0.3s ease;
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: white;
+  border-radius: 2px;
 }
 
+/* Responsive styles */
 @media (max-width: 768px) {
-  .hamburger {
-    display: block;
-  }
-
-  #nav-menu {
-    width: 100%;
-    overflow: hidden;
-    max-height: 0;
-  }
-
-  #nav-menu.open {
-    max-height: 200px;
-  }
-
-  .navbar nav ul {
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: #002244;
     flex-direction: column;
-    align-items: flex-start;
-    padding-left: 1rem;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in;
   }
 
-  .navbar nav ul li {
-    width: 100%;
-    padding: 0.5rem 0;
+  .nav-links.open {
+    max-height: 300px; /* Adjust as needed */
+  }
+
+  .hamburger {
+    display: flex;
   }
 }
-
   
   /* HERO */
   .hero {
