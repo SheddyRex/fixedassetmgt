@@ -102,7 +102,7 @@ html {
 
   /* HERO */
   .hero {
-    background: url('images/hero.jpg') center center/cover no-repeat;
+    background: url('images/property-hero.jpg') center center/cover no-repeat;
     color: white;
     text-align: center;
     padding: 3rem 1rem;
@@ -285,7 +285,7 @@ html {
   /* FOR FACILITY MANAGEMENT PAGE*/
   
   .facility-hero {
-    background: url('images/facility-hero.jpg') center/cover no-repeat;
+    background: url('images/property-hero.jpg') center/cover no-repeat;
     padding: 6rem 1rem;
     color: white;
     text-align: center;
