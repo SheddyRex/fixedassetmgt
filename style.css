@@ -98,7 +98,10 @@
     white-space: nowrap; /* prevents word wrapping */
   }
 }
-
+  
+  .hamburger {
+    display: flex;
+  }
 
   /* HERO */
   .hero {
