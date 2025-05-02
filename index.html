@@ -9,19 +9,21 @@
 </head>
 <body>
   <header class="navbar">
-    <div class="container">
-     <div class="logo">Fixed Assets</div>
-     <nav>
-       <ul class="nav-links">
+  <div class="container">
+    <div class="logo">FIXED ASSET</div>
+    <nav id="nav-menu" class="nav-menu">
+      <ul>
         <li><a href="index.html" class="active">Home</a></li>
         <li><a href="facility-management.html">Facility Management</a></li>
         <li><a href="property-management.html">Property Management</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-       </ul>
-      </nav>
-   </div>
-  </header>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="hamburger" id="hamburger">&#9776;</div>
+  </div>
+</header>
+
   
 
   <section class="hero">
@@ -139,6 +141,16 @@
       slidesPerView: 1,
     });
   </script>
+
+  <script>
+  const hamburger = document.getElementById('hamburger');
+  const navMenu = document.getElementById('nav-menu');
+
+  hamburger.addEventListener('click', () => {
+    navMenu.classList.toggle('open');
+  });
+</script>
+
 
 </body>
 </html>
